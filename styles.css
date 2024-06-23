@@ -48,6 +48,18 @@ input[type="file"] {
   display: none;
 }
 
+#arquivo-label {
+  font-size: 20px;
+  padding: 15px;
+  background-color: #ed9222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#arquivo-label:hover {
+  background-color: #d48a35;
+}
+
 .acoes {
   display: flex;
   align-items: center;
@@ -81,17 +93,55 @@ input[type="file"] {
 .acoes button {
   background-color: #ed9222;
   color: #fff;
-
   transition: 0.3s;
 }
 
-#arquivo-label {
-  font-size: 20px;
-  padding: 15px;
-  background-color: #ed9222;
+.acoes button:hover {
+  background-color: #d48a35;
 }
 
-.acoes button:hover,
-#arquivo-label:hover {
-  background-color: #d48a35;
+/* Media query para telas menores */
+@media screen and (max-width: 960px) {
+  .container h1 {
+    font-size: 36px; /* Reduzir o tamanho da fonte do título */
+  }
+
+  #entrada-de-conteudo {
+    flex-direction: column; /* Mudar para coluna em telas menores */
+    width: 90%;
+  }
+
+  #entrada-de-conteudo textarea {
+    width: 100%; /* Ajustar para ocupar toda a largura */
+  }
+
+  .acoes {
+    flex-direction: column;
+    width: 90%; /* Ajustar para telas menores */
+  }
+
+  .acao-box {
+    flex-basis: 100%; /* 1 ação por linha em telas menores */
+  }
+
+  #arquivo-label {
+    font-size: 16px; /* Reduzir o tamanho da fonte do label do arquivo */
+    width: 100%; /* Ajustar para ocupar toda a largura */
+    padding: 10px; /* Reduzir o padding */
+  }
+
+  .acoes select,
+  .acoes button,
+  #arquivo-label {
+    width: 100%; /* Ajustar para ocupar toda a largura disponível */
+  }
+
+  #acrescentar-arquivo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #acrescentar-arquivo label {
+    margin-bottom: 10px;
+  }
 }
