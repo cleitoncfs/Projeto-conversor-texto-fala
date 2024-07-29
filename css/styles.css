@@ -100,16 +100,8 @@ input[type="file"] {
   background-color: #d48a35;
 }
 
-/* Rodapé */
-.container-rodape {
-  position: relative;
-  padding: 50px 10px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  color: #cc9455;
+.container-rodape{
+  color:#ebbe87
 }
 
 /* Media query para telas menores */
